@@ -573,7 +573,7 @@ ul {
 .foto-portfolio-overlay {
   position: absolute;
 
-  inset: 0;
+  bottom: 0;
   padding: 0.5em;
   width: 370px;
   height: 294px;
@@ -586,20 +586,16 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
+  padding: 49px 45px 49px 24px;
   color: var(--color-text-third);
 }
 .foto-portfolio-position:hover .foto-portfolio-overlay,
 .foto-portfolio-position:focus .foto-portfolio-overlay {
   transform: translateY(0);
 }
-.foto-portfolio-object {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+
 /* Style do układania*/
 
 .container {
@@ -671,12 +667,6 @@ button {
 /* efekty i inne*/
 
 .is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(0);
-}
-.is-hidden2 {
   visibility: hidden;
   opacity: 0;
   transform: rotate(120deg);
