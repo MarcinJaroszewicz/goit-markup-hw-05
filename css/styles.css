@@ -577,13 +577,11 @@ ul {
   padding: 0.5em;
   width: 370px;
   height: 294px;
-  background-color: var(--color-link-first);
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .foto-portfolio-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
