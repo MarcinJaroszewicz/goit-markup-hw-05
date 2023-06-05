@@ -73,10 +73,17 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-text-first);
+  transition: color 250ns;
 }
 .menu-links-a {
+  color: var(--color-link-first);
+  position: relative;
+  padding: 33px 0;
 }
 .menu-links-p {
+  color: var(--color-link-first);
+  position: relative;
+  padding: 33px 0;
 }
 
 .menu-links:focus,
@@ -86,8 +93,8 @@ ul {
 .menu-links-a::after {
   content: "";
   display: block;
-  position: relative;
-  top: 25.5px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 4px;
   background-color: var(--color-link-first);
@@ -96,8 +103,8 @@ ul {
 .menu-links-p::after {
   content: "";
   display: block;
-  position: relative;
-  top: 25.5px;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 4px;
   background-color: var(--color-link-first);
@@ -245,14 +252,10 @@ ul {
 
   gap: 30px;
 }
-
 .foto-box {
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
   position: relative;
-  top: -70px;
 }
+
 .foto-text-box {
   color: #fff;
   font-family: "Roboto";
@@ -260,10 +263,18 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 27px 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .padding-section {
