@@ -605,8 +605,9 @@ ul {
 }
 .foto-portfolio-overlay {
   position: absolute;
+  top: 0;
+  left: 0;
 
-  bottom: 0;
   padding: 0.5em;
   width: 370px;
   height: 294px;
@@ -630,6 +631,10 @@ ul {
   position: relative;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+.foto-portfolio-div {
+  position: relative;
   overflow: hidden;
 }
 
