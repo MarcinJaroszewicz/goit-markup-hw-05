@@ -340,6 +340,9 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -347,9 +350,6 @@ ul {
   background-color: var(--color-link-first);
 
   fill: var(--color-text-third);
-
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foto-team-section {
@@ -391,6 +391,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
@@ -404,8 +406,6 @@ ul {
 .client-link:hover,
 .client-link:focus {
   color: var(--color-link-first);
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Stopka*/
@@ -451,13 +451,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--color-link-first);
   border-radius: 50%;
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-icon-item {
   width: 44px;
